@@ -25,8 +25,6 @@ for row in $(echo ${version_list} | jq -r '.[] | @base64'); do
         rm /tmp/shopware-core.zip
         rm -r /tmp/assets
 
-        chown www-data:www-data -R /var/www/html
-
         exit 0
     fi
 done
