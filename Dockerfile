@@ -15,7 +15,7 @@ COPY ./scripts/install-shopware.sh /usr/local/bin/install-shopware
 COPY ./scripts/run-container.sh /usr/local/bin/run-container
 COPY ./assets /tmp/assets
 
-RUN apt update && apt-get install -qq -y jq && \
+RUN apt update && apt install -qq -y jq unzip && \
     chmod +x /usr/local/bin/install-shopware && \
     chmod +x /usr/local/bin/run-container && \
     install-shopware ${COB_SW_VERSION} && \
