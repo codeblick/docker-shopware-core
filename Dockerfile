@@ -1,6 +1,6 @@
 ARG COB_PHP_VERSION
 
-FROM codeblick/php:${COB_PHP_VERSION}-apache
+FROM codeblick/shopware-base:php-${COB_PHP_VERSION}
 
 ARG COB_SW_VERSION
 
