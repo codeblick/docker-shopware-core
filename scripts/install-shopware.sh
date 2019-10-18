@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -e
 
+rm /var/www/html/index.html
+
 req_version=$1
 version_list=$(curl -s 'http://update-api.shopware.com/v1/releases/install')
 
