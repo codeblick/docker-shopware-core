@@ -15,9 +15,10 @@ COPY ./scripts/install-shopware.sh /usr/local/bin/install-shopware
 COPY ./scripts/run-container.sh /usr/local/bin/run-container
 COPY ./assets /tmp/assets
 
-RUN apt-get install -qq -y jq && \
+RUN apt update && apt-get install -qq -y jq && \
     chmod +x /usr/local/bin/install-shopware && \
     chmod +x /usr/local/bin/run-container && \
-    install-shopware ${COB_SW_VERSION}
+    install-shopware ${COB_SW_VERSION} && \
+    apt autoremove -y && apt clean && rm -rf /var/lib/apt/lists/*
 
 CMD ["run-container"]
