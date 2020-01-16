@@ -12,3 +12,5 @@ build() {
 build 7.3 5.6.0
 build 7.3 5.6.1
 build 7.3 5.6.2
+build 7.3 5.6.3
+build 7.3 5.6.4

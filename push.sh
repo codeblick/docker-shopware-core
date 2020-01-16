@@ -10,3 +10,5 @@ docker login -u ${DOCKER_USER} -p ${DOCKER_PASSWORD}
 push 5.6.0
 push 5.6.1
 push 5.6.2
+push 5.6.3
+push 5.6.4
