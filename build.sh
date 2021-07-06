@@ -9,5 +9,5 @@ build() {
 }
 
 build 7.3 5.6.10
-build 7.3 5.7.0
-build 7.3 5.7.2
+build 7.4 5.7.0
+build 7.4 5.7.2
